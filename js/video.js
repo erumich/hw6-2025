@@ -54,7 +54,7 @@ let volumeControl = document.getElementById("slider");
 
 volumeControl.addEventListener('input', function() {
 	video.volume = this.value / 100;
-	document.getElementById("volume").innerText = (video.volume * 100) + "%";
+	document.getElementById("volume").textContent = (video.volume * 100) + "%";
 });
 // https://stackoverflow.com/questions/31926221/video-volume-slider-in-html5-and-javascript
 
